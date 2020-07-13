@@ -5,7 +5,15 @@ using namespace std;
 using ll = long long;
 #define pb push_back
 #define dbg(x) cerr << #x << " " << x << "\n"
- 
+/**
+- It's easy to see that the best configuration is a chain,
+  so first we add the edges 1 - 2, 2 - 3, 3 - 4, (n-1) - n
+- Now we need to add the remaining m - n + 1 edges
+- We want the edge to end as far away as possible from n
+=> we start to add in order all edges that end in 3..n that aren't part of the chain till we don't have any edge left
+ of course the edges that end in i will be added in order from the one that has the least length in the chain to the greatest length
+ (ex: for i = 5 we add in order 4 - 5, 3 - 5, 2 - 5 if we still have edges)
+**/
 vector <pair <int, int>> edges;
  
 int main () {
