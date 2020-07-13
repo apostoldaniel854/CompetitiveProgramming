@@ -12,7 +12,7 @@ using ll = long long;
 - We want the edge to end as far away as possible from n
 => we start to add in order all edges that end in 3..n that aren't part of the chain till we don't have any edge left
  of course the edges that end in i will be added in order from the one that has the least length in the chain to the greatest length
- (ex: for i = 5 we add in order 4 - 5, 3 - 5, 2 - 5 if we still have edges)
+ (ex: for i = 6 we add in order 4 - 6, 3 - 6, 2 - 6, 1 - 6 if we still have edges)
 **/
 vector <pair <int, int>> edges;
  
