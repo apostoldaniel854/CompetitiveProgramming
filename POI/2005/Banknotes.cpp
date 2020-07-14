@@ -7,6 +7,10 @@ using ll = long long;
 #define pb push_back
 #define dbg(x) cerr << #x << " " << x << "\n"
 
+/**
+  Only 94 points...
+**/
+
 const int N = 200, K = 2e4;
 int b[1 + N], c[1 + N], ans[1 + N];
 int dp[1 + K], newDp[1 + K];
