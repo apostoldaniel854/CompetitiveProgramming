@@ -11,7 +11,8 @@ vector <int> tower[1 + N];
 
 /**
 -   The answer is the number of consecutive numbers that are not in the same tower
--   We can use dsu for this using small to large technique
+-   We can use dsu to merge the towers in the same time decreasing ans if the element that we add to the subset is x and there's x - 1 or x + 1 already in the subset
+-   We also use small to large technique
 **/
 
 int ft (int x) {
